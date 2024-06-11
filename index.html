@@ -435,13 +435,18 @@
           <div class="cta-content">
             <h2 class="h2 section-title">Book your appointment now, just fill out the form!</h2>
             <div>
-              <form id="contact-form" method="POST">
-                <input class="input" type="text" id="name" name="nombre" required placeholder="Name">
-                <input class="input" type="email" id="email" name="correo" required placeholder="Email">
+              <form id="contact-form">
+                <input class="input" type="text" id="name" name="name" placeholder="Name" required>
+                <input class="input" type="email" id="email" name="" placeholder="Email" required>
+                <div class="sub_container">
+                  <input type="tel" name="tel" id="tel" class="input input-mod" placeholder="Tel" required>
+                  <input type="date" name="date" id="date" class="input input-mod" required>
+                </div>
                 <textarea class="input_message" id="message" name="message" rows="4" required
                   placeholder="Message"></textarea>
                 <input class="btn btn_input" type="submit" value="Send">
               </form>
+
             </div>
 
             <!--<a href="#" class="btn">Reserve Now.</a>-->
